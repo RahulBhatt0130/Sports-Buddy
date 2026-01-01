@@ -1,0 +1,21 @@
+sports-buddy/
+│
+├── public/
+│   ├── index.html
+│   ├── login.html
+│   ├── register.html
+│   ├── admin.html
+│
+├── src/
+│   ├── css/
+│   │   └── style.css
+│   │
+│   ├── js/
+│   │   ├── firebaseConfig.js
+│   │   ├── auth.js
+│   │   ├── sports.js
+│   │   ├── admin.js
+│   │   └── logger.js
+│
+├── README.md
+└── .gitignore
