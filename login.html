@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login | Sports Buddy</title>
+  <link rel="stylesheet" href="../src/css/style.css">
+</head>
+<body>
+
+<h2>User Login</h2>
+
+<input type="email" id="email" placeholder="Email" />
+<input type="password" id="password" placeholder="Password" />
+<button onclick="loginUser()">Login</button>
+
+<script type="module">
+  import { login } from "../src/js/auth.js";
+
+  function loginUser() {
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+    login(email, password);
+  }
+
+  window.loginUser = loginUser;
+</script>
+
+</body>
+</html>

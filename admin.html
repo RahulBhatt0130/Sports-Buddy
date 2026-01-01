@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin | Sports Buddy</title>
+  <link rel="stylesheet" href="../src/css/style.css">
+</head>
+<body>
+
+<h1>Admin Dashboard</h1>
+
+<h3>Add Sports Category</h3>
+<input type="text" id="category" placeholder="Category name">
+<button onclick="addCat()">Add</button>
+
+<script type="module">
+  import { addCategory } from "../src/js/admin.js";
+
+  const admin = "admin@sportsbuddy.com";
+
+  function addCat() {
+    const cat = document.getElementById("category").value;
+    addCategory(cat, admin);
+    alert("Category Added");
+  }
+
+  window.addCat = addCat;
+</script>
+
+</body>
+</html>
